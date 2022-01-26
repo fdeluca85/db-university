@@ -1,0 +1,16 @@
+ 
+1)  SELECT COUNT(`id`) AS `Totale studenti`, YEAR(`enrolment_date`) AS `anno di iscrizione`
+    FROM `students`
+    GROUP BY YEAR(`enrolment_date`)
+
+2)  SELECT COUNT(`id`) AS `Totale insegnanti`, `office_address` AS `Indirizzo`
+    FROM `teachers`
+    GROUP BY `office_address`
+
+4)  SELECT AVG(`vote`) AS `media voto`, `exam_id` AS `Esame`
+    FROM `exam_student`
+    GROUP BY `exam_id`
+
+5)  SELECT COUNT(`id`) AS `Corsi di laurea`, `department_id` AS `Dipartimento`
+    FROM `degrees`
+    GROUP BY `department_id`
