@@ -27,6 +27,8 @@ WHERE `level` = 'magistrale';
 7)SELECT id 
 FROM `departments`;  
 
+SELECT COUNT(id) FROM `departments` (correzione)
+
 8)SELECT * 
 FROM `teachers` 
 WHERE `phone` is NULL; 
